@@ -16,6 +16,12 @@ steps:
         "--trigger-http",
         "--runtime",
         "python310",
+        "--memory",
+        "128MB",
+        "--timeout",
+        "30s",
+        "--max-instances",
+        "100",
         "--entry-point",
         "hello_http",
       ]
