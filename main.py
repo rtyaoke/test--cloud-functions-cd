@@ -1,5 +1,7 @@
 import functions_framework
 
+from .src import MyLibrary
+
 
 @functions_framework.http
 def hello_http(request):
@@ -21,4 +23,4 @@ def hello_http(request):
         name = request_args['name']
     else:
         name = 'World'
-    return 'Hi {}! v2'.format(name)
+    return f'Hi {name}! v2 {MyLibrary.get_project_name()}'
