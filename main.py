@@ -21,4 +21,4 @@ def hello_http(request):
         name = request_args['name']
     else:
         name = 'World'
-    return 'Hi {}! from cd on build cloud'.format(name)
+    return 'Hi {}! v2'.format(name)
