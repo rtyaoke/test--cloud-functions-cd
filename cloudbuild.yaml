@@ -13,7 +13,7 @@ steps:
         "function-1",
         "--gen2",
         "--region",
-        "asia-northeast1"
+        "asia-northeast1",
         "--trigger-http",
         "--runtime",
         "python310",
