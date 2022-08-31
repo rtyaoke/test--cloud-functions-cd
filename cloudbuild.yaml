@@ -15,7 +15,6 @@ steps:
         "--region",
         "asia-northeast1",
         "--trigger-http",
-        "--allow-unauthenticated",
         "--runtime",
         "python310",
         "--entry-point",
