@@ -20,7 +20,7 @@ def hello_http(request):
     if request_json and 'name' in request_json:
         name = f"get_json = {request_json['name']}"
     elif request_args and 'name' in request_args:
-        name = f"{name}, args = {request_args['name']}"
+        name = f"args = {request_args['name']}"
     else:
         name = 'World'
     return f'{name}. v2 {MyLibrary.get_project_name()}'
